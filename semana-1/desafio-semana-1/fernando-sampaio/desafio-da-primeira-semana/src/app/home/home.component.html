@@ -1,0 +1,53 @@
+<nav class="navbar navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand">Carrinho de Compras - Fernando Sampaio</a>
+  </div>
+</nav>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xl-8">
+      <div *ngFor="let product of productList" class="d-sm-flex justify-content-between my-4 pb-4 border-bottom mt-4">
+        <div class="media d-block d-sm-flex text-center">
+          <div class="cart-item-thumb">
+            <img [src]="product.image" alt="Product" class="zoom" style="object-fit: contain">
+          </div>
+          <div>
+            <h3>{{product.name}}</h3>
+            <div><span class="text-muted">Modelo:</span>{{product.model}}</div>
+            <div><span class="text-muted">Cor:</span>{{product.color}}</div>
+            <div class="text-primary pt-2">R${{product.price}}</div>
+          </div>
+        </div>
+        <div style="max-width: 10rem;">
+          <button (click)="addToCart(product)" type="button" class="btn btn-info mt-3">Adicionar ao carrinho</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Detalhes -->
+    <div class="col-xl-4 pt-md-0 mt-5">
+      <h2 class="h6 py-3 bg-light text-center">Valor Total</h2>
+      <div class="h3 font-weight-semibold text-center py-3">{{total | currency : 'R$' }}</div>
+      <hr>
+      <h3 class="h6 pt-4 font-weight-semibold">Detalhes da Compra</h3>
+      <div class="product-info" *ngFor="let product of products; let i  = index">
+        <div class="col-md-3">
+          <div>
+            <img [src]="product?.image" alt="Product" class="img-circle">
+          </div>
+        </div>
+        <h5>{{product?.name}} <span> - R${{product?.price}}</span></h5>
+        <span class="text-muted">Quantidade</span>
+        <div>
+          <input [(ngModel)]="product.quantity" [ngModelOptions]="{standalone: true}" min="1" type="number" value="1"
+            class="form-control w-25" />
+          <br>
+          <span>R${{ product.quantity * product?.price | number : '1.2-2'}}</span>
+        </div>
+        <button (click)="removeFromCart(product)" type="button" class="btn btn-danger mt-3">Excluir</button>
+        <hr/>
+      </div>
+    </div>
+  </div>
+</div>

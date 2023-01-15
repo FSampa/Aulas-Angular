@@ -1,0 +1,51 @@
+.bg-light {
+  background-color: #577fa6!important;
+}
+
+.container-fluid {
+  text-align: center;
+  display: block;
+}
+
+.cart-item-thumb {
+  display: block;
+  width: 10rem
+}
+
+.product-card-title {
+  -webkit-flex: auto;
+  flex: auto;
+  font-size: 22px;
+  margin-bottom: 8px;
+  margin-right: 28px;
+  padding: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Zoom da Imagem */
+.zoom {
+  height: 80px;
+  width: 80px;
+  background-color: none;
+  transition: transform .2s;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  transform: scale(1.5);
+}
+
+.btn-info {
+  background-color: rgba(65, 137, 230, .15);
+  border-color: transparent;
+  color: #3483fa;
+  width: 190px;
+  height: 50px;
+}
+
+.row {
+  --bs-gutter-x: 4.5rem;
+}

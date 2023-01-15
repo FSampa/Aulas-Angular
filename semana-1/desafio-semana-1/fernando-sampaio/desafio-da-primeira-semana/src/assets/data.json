@@ -1,0 +1,38 @@
+[
+  {
+    "id": "1",
+    "name": "Câmera Samsung",
+    "image": "https://img2.gratispng.com/20180522/ttz/kisspng-samsung-galaxy-camera-samsung-nx300-mirrorless-int-samsung-galaxy-nx-5b0434e51163e8.8735692615270023410712.jpg",
+    "model": "NX300",
+    "color": "Preta",
+    "price": 1499.99,
+    "quantity": 0
+  },
+  {
+    "id": "2",
+    "name": "Guitarra Gibson",
+    "image": "https://www.teclacenter.com.br/images/detailed/7/gibson-studio-50s-tribute-v-sunburst-case-5984.jpg",
+    "model": "Les Paul Studio",
+    "color": "Sunburst",
+    "price": 8559.99,
+    "quantity": 0
+  },
+  {
+    "id": "3",
+    "name": "Monitor Dell",
+    "image": "https://i.dell.com/is/image/DellContent//content/dam/ss2/product-images/peripherals/output-devices/dell/monitors/up2720q/global-spi/ng/monitor-up2720q-gray-campaign-hero-504x350-ng.png?fmt=jpg",
+    "model": "UltraSharp 27",
+    "color": "Cinza Espacial",
+    "price": 7099.99,
+    "quantity": 0
+  },
+  {
+    "id": "4",
+    "name": "Microfone Shure",
+    "image": "https://images.tcdn.com.br/img/img_prod/553565/microfone_dinamico_shure_sm7b_496_4_20170920152158.png",
+    "model": "SM7B Dinâmico",
+    "color": "Preto",
+    "price": 3599.99,
+    "quantity": 0
+  }
+]
